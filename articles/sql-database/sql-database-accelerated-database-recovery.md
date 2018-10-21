@@ -102,7 +102,7 @@ The four key components of ADR are:
   sLog is a secondary in-memory log stream that stores log records for non-versioned operations (such as metadata cache invalidation, lock acquisitions, and so on). The sLog is:
 
   - Low volume and in-memory
-  - Persisted on disk by been serialized during the checkpoint process
+  - Persisted on disk by being serialized during the checkpoint process
   - Periodically truncated as transactions commit
   - Accelerates redo and undo by processing only the non-versioned operations  
   - Enables aggressive transaction log truncation by preserving only the required log records
